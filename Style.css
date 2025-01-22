@@ -1,0 +1,123 @@
+*{
+  font-family: Times New Roman;
+  justify-content: center;
+  font-size: 30px;
+}
+h3{
+  font-family: Sans-Serif;
+  color: rgb(170,63,63);
+  text-align:center ;
+}
+.front{
+  font-family: Times New Roman;
+  text-align:  center;
+  
+}
+  .design{
+    /*background:  linear-gradient(to left,
+ #ba72df,
+  #f17b83);*/
+  background-color: beige;
+  color:black ;
+  padding:10px 10px;
+}
+a:visited{
+  color: rgba(246,189,189,0.914);
+}
+a:active{
+  color:rgba(137,247,195,0.914) ;
+}
+table{
+  padding: 2px;
+  
+  
+  empty-cells: hide;
+  table-layout: fixed;
+  visibility: visible;
+  width: 100%;
+  
+}
+img{
+  float: right;
+  margin-left:10px;
+  margin-bottom: 5px;
+  width: 20%;
+  height: 20%;
+}
+h2{
+  font-family: Sans-Serif;
+}
+#home{
+  animation: home  linear;
+  margin-left: 10px;
+  }
+ @keyframes home{
+   0%{
+     opacity: 0;
+     transform: translatey(50%);
+   }
+   70%{
+     transform: translatey(-6%);
+   }
+   90%{
+     transform: translatey(0%);
+   }
+ }
+@keyframes strength{
+  from{
+     opacity: 0;
+     transform: translatex(-100px);
+   }
+   to{
+     transform: translatex(0px);
+   }
+  
+}
+#strength,#project,#goals{
+  animation: strength linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+  position: relative;
+  left: 10px;
+}
+#skill{
+  animation: skill  linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+  position: relative;
+  left: 10px;
+}
+@keyframes skill{
+  0%{
+     opacity: 0;
+     transform: translatez(-100px);
+   }
+   70%{
+     transform: translatez(500px);
+   }
+   90%{
+     transform: translatez(0px);
+   }
+}
+
+.info{
+  width: 100px; 
+  padding: 2px;
+  display: flex;
+  flex-direction: right;
+  
+  flex-wrap: wrap;
+  justify-content:space around ;
+}
+@media screen and (max-width:500px){
+  img{
+    float: none;
+    width:100%;
+    height: 50%;
+  }
+
+  table{
+    font-size: 10px;
+    
+  }
+}
