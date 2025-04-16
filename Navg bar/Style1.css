@@ -1,0 +1,329 @@
+.web{
+  margin: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: Times New Roman;
+  font-size:26;
+}
+  .front{
+background-color:#b1e5ff ;
+}
+.front img{
+  width:250px;
+  height: 110px;
+  left: 80%;
+  image-orientation:center ;
+}
+.front input{
+cursor: pointer;
+  position: relative;
+  height: 30px;
+  width:100px;
+ left: 45%;
+text-align: center;
+  border-radius: 2px;
+  color: #f62626;
+  box-shadow: 0,0,10px, rgba(0,0,0,0.3));
+  font-decoration: blink;
+}
+.front  h1{
+  text-align:  center;
+  color:#89188e ;
+  font-family: Sans-Serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
+  position:static;
+  top: 70px;
+   left: 15%;
+  padding-top: 20px;
+}
+.front h2{
+  text-align:  center;
+  color:#241db4;
+  font-family: Sans-Serif;
+text-transform: capitalize;
+  font-weight: 300;
+
+  position:relative;
+}
+h3{
+  text-align: left;
+  color:#4e46f8;
+  text-transform: capitalize;
+  font-weight: 150;
+  font-size: 25px;
+}
+ .about ul li {
+  font-display: grid;
+  text-emphasis-position: right;
+  list-style: none;
+}
+/*course slide*/
+.career{
+  background-color: #e6f0c0;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+
+}
+
+/* Hide the images by default */
+.myslides{
+  display: none;
+  height:200px;
+  
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+  
+  transform: translatey(calc(50%));
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}  
+h2{
+  
+  color:#241db4;
+  font-family: Sans-Serif;
+text-transform: capitalize;
+  font-weight: 300;
+
+}
+/*facliy anins*/
+#lib,#spo,#social,#pla{
+  animation: skill  1s ease-in-out infinite;
+ /* animation-timeline: view();
+  animation-range: entry 0 cover 40%;*/
+  position: relative;
+  left: 10px;
+}
+@keyframes skill{
+  0%{
+    /* opacity: 0;
+     transform: translatez(-100px);*/
+     top: 0px;
+   }
+   50%{
+    /* transform: translatez(500px);*/
+    top: ;
+    top: -10px;
+   }
+   100%{
+    /* transform: translatez(0px);*/
+    top: 0px;
+   }
+}
+#ncc,#nss,#can{
+  animation: home  3s ;
+  margin-left: 10px;
+  }
+ @keyframes home{
+   /*
+   0%{
+     opacity: 0;
+     transform: translatey(50%);
+   }
+   70%{
+     transform: translatey(-6%);
+   }
+   90%{
+     transform: translatey(0%);
+   }
+ }*/
+ 0%{
+   transform: scale(0);
+ }
+ 100%{
+   transform:scale(1.2);
+ }
+ }
+ /*faclity desgins*/
+.faclity{
+  background-color: #ead76b;
+  
+}
+.box{
+  background-color: #5957ca;
+  top: 4px;
+  
+  width: 30%;
+  height: 60px;
+  text-align:center;
+  left: 30%;
+position: relative;  
+}
+#spo i{
+  left: 30% ;
+  padding: 10%;
+}
+.box1{
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+   
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: block;
+   border:1px solid #fefefe ;
+}
+/*nav bar*/
+.slide{
+  height: 100%;
+  width:180px;
+  position: fixed;
+  background-color:white;
+  transition: 0.5% ease;
+  transform: translatex(-180px);
+}
+img{
+  height: 200px;
+  width:180px;
+  padding: 10px 0;
+  padding-right: 30px;
+  pointer-events: none;
+  align-content: center;
+}
+ul li{
+  list-style: none;
+}
+ul li a {
+  color:#0077b6 ;
+  font-weight: 500;
+  padding:5px 0;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.2% ease-out;
+  height: 30px;
+  
+
+}
+ul li a i {
+  width:40px;
+  text-align: center;
+  display: block;
+}
+.check input{
+  display: none;
+  visibility: hidden;
+  webkit-appearance: none;
+  
+}
+.toggle{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  left: 15px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #f62626:
+  
+  box-shadow: 0,0,10px, rgba(0,0,0,0.3));
+}
+.toggle .common{
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color:#99419d;
+  border-radius: 50px;
+  transition: 0.3% ease;
+}
+.toggle .topline{
+  top: 30%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.toggle .middleline{
+  top: 50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+.toggle .bottomline{
+  top: 70%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+input:checked ~ .toggle.topline{
+  left: 2px;
+  top: 14px;
+  width: 25px;
+  transform: rotate(45deg);
+}
+input:checked ~ .toggle.bottomline{
+  left: 2px;
+  top: 14px;
+  width: 25px;
+  transform: rotate(-45deg);
+}
+input:checked ~ .toggle.middleline{
+  opacity: 0;
+  transform: translatex(20px);
+}
+input:checked ~ .slide{
+  transform: translatex(10px);
+  box-shadow: 0,0,15px,rgba(0,0,0,0.5);
+}
+ul li:hover a{
+  color: #fff;
+  background-color: #8000ff;
+}
+
+  
